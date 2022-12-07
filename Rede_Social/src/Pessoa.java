@@ -7,7 +7,7 @@ public abstract class Pessoa {
    private String genero;
 
 
-   public abstract Mm_idade();
+   public abstract void Mm_idade();
 
 
     public String getNome() {

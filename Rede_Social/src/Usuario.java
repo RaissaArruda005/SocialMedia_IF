@@ -5,9 +5,15 @@ public class Usuario extends Pessoa {
 
             System.out.println("Menor de idade! Não pode usar a rede social");
 
+
             
         }
+        else 
+        {
 
+            System.out.println("Maior de idade! pode usar a Rede social");
+
+        }
 
     }
 
