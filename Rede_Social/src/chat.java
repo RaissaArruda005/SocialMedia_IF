@@ -37,4 +37,5 @@ public class chat {
     public void setQtd_notificacao(int qtd_notificacao) {
         this.qtd_notificacao = qtd_notificacao;
     }
+}
     
