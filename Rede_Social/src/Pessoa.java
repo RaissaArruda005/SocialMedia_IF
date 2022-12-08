@@ -1,21 +1,25 @@
 public abstract class Pessoa {
 
-   private String nome;
+   private String Nome;
    private int idade;
    private String email;
    private String Biografia;
    private String genero;
 
 
-   public abstract void Mm_idade();
+   public abstract void controleIdade(int valor);
+
+   public abstract void cadastrar(String nome);
+
+
 
 
     public String getNome() {
-        return this.nome;
+        return this.Nome;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.Nome = nome;
     }
 
     public int getIdade() {
