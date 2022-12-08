@@ -24,9 +24,10 @@ public class Usuario extends Pessoa {
     @Override
     public void cadastrar(String nome){
 
-        System.out.println("Informe seu nome: ");
+        
         String Nome = nome;
         setNome(Nome);
+        
 
 
     }
