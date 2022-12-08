@@ -17,7 +17,7 @@ public class App {
         System.out.println("Informe seu nome: ");
         nome = sc.nextLine();
         usu.cadastrar(nome);
-        System.out.println("Seu nome é: "+ nome);
+        
 
 
         
