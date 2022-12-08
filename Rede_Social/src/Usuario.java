@@ -1,14 +1,39 @@
 public class Usuario extends Pessoa {
     
-    public void Mm_idade(int idade2){
-        if (getIdade() < 18){
+    @Override
+    public void controleIdade(int valor){
+        if (valor < 18){
 
-            System.out.println
+            System.out.println("Menor de idade! Não pode usar a rede social");
+            int idade = valor;
+            setIdade(idade);
+
+
+
+        }
+        else
+        {
+            System.out.println("Maior de idade! pode usar a Rede social");
 
 
         }
 
+    }
+
+
+    @Override
+    public void cadastrar(String nome){
+
+        
+        String Nome = nome;
+        setNome(Nome);
+        
+
 
     }
+
+
+
+
 
 }
