@@ -24,7 +24,6 @@ public class Usuario extends Pessoa {
     @Override
     public void cadastrar(String nome){
 
-        
         String Nome = nome;
         setNome(Nome);
         
