@@ -2,7 +2,6 @@ import java.util.Date;
 
 public class mensagem {
     private String texto;
-    private Date horario;
 
     public String getTexto() {
         return this.texto;
@@ -19,4 +18,6 @@ public class mensagem {
     public void setHorario(Date horario) {
         this.horario = horario;
     }
+    private Date horario;
+
 }
