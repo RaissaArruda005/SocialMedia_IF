@@ -8,6 +8,8 @@ public class Usuario extends Pessoa {
             int idade = valor;
             setIdade(idade);
 
+        
+
 
 
         }
@@ -24,9 +26,18 @@ public class Usuario extends Pessoa {
     @Override
     public void cadastrar(String nome){
 
+        if (getIdade() < 18)
+        {
+            System.out.println("NÃO PODE FAZER CADASTRO");
+
+        }
+        else{
+
+
         String Nome = nome;
         setNome(Nome);
-        
+        System.out.println("Seu nome é: "+ getNome());
+        }
 
 
     }
