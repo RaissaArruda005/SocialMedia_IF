@@ -9,7 +9,7 @@ public abstract class Pessoa {
 
    public abstract void controleIdade(int valor);
 
-   public abstract void cadastrar(String nome);
+   public abstract void cadastrar(String nome, String email, String genero);
 
 
 

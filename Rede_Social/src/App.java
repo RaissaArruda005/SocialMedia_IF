@@ -9,25 +9,45 @@ public class App {
 
         int valor;
         String nome;
-        int escolha = 0;
+        String genero;
+        String email;
+        int escolha_L_ou_C = 0; 
 
-
-        System.out.println("Informe sua idade: ");
-        valor = sc.nextInt();
-        usu.controleIdade(valor);
-
-        if (valor >= 18){
-
-        System.out.println("Informe seu nome: ");
-        nome = sc.nextLine();
-        usu.cadastrar(nome);
-        }
         
-        else{
-            System.out.println("Não pode fazer cadastro");
+        while (escolha_L_ou_C  != 3){
+        System.out.print("\n Digite: \n 1 - Cadastrar \n 2- Logar \n 3 - Sair \n:");
+        escolha_L_ou_C = sc.nextInt();
+
+        if (escolha_L_ou_C == 1){
+
+            sc.nextLine();
+            System.out.print("Informe seu nome: ");
+            nome = sc.nextLine();
+        
+            System.out.print("Informe seu e-mail: ");
+            email = sc.nextLine();
+            System.out.print("Informe seu gênero: ");
+            genero = sc.nextLine();
 
 
-        }
+            
+            usu.cadastrar(nome, email, genero);
+            
+
+            System.out.print("Informe sua idade: ");
+            valor = sc.nextInt();
+            usu.controleIdade(valor);
+
+
+
+
+                }
+        
+            }
+            
+        
+        
+        
 
 
 
